@@ -23,11 +23,9 @@ dependencies {
     }
 }
 
-tasks.withType(JavaCompile).configureEach {
-    it.options.release = 25
-}
-
+// This tells Gradle to securely fetch and use Java 25 just for compiling the mod
 java {
-    sourceCompatibility = JavaVersion.VERSION_25
-    targetCompatibility = JavaVersion.VERSION_25
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
 }
