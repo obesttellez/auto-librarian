@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "auto-librarian",
+  "version": "${version}",
+  "name": "Auto Librarian",
+  "description": "Automates lectern rerolling with strict line-of-sight validation.",
+  "authors": ["You"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.autolibrarian.AutoLibrarianClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.7",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
