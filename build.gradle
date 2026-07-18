@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.5-SNAPSHOT'
+    id 'fabric-loom' version '1.9-SNAPSHOT'
 }
 
 version = project.mod_version
@@ -23,7 +23,6 @@ dependencies {
     }
 }
 
-// This tells Gradle to securely fetch and use Java 25 just for compiling the mod
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(25)
