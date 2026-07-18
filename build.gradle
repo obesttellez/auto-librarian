@@ -1,18 +1,5 @@
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        // Force Loom to use a newer ASM version that understands Java 25 (Version 69)
-        classpath 'org.ow2.asm:asm:9.8'
-        classpath 'org.ow2.asm:asm-tree:9.8'
-        classpath 'org.ow2.asm:asm-commons:9.8'
-        classpath 'org.ow2.asm:asm-util:9.8'
-    }
-}
-
 plugins {
-    id 'fabric-loom' version '1.9-SNAPSHOT'
+    id 'net.fabricmc.fabric-loom' version '1.17'
 }
 
 version = project.mod_version
@@ -40,4 +27,4 @@ java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(25)
     }
-}
+}t
